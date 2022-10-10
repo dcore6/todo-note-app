@@ -1,0 +1,475 @@
+* {
+    font-family: Mulish, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #F9F9F9;
+}
+
+.white-logo-box {
+    width: 200px;
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.15));
+}
+
+.white-logo-box p {
+    font-weight: 600;
+    font-size: 2.1rem;
+    color: #2D8E62;
+    font-style: normal;
+}
+
+.logo-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+.green-logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2D8E62;
+    padding: 5%;
+    border-radius: 50%;
+}
+
+.green-logo-box img {
+    width: 30px;
+    height: 30px;
+}
+
+/* main content */
+
+main {
+    display: flex;
+    align-items: center;
+    max-width: 1600px;
+    background-color: white;
+    padding: 0 25px 0;
+}
+
+/* tasks content */
+
+.tasks {
+    display: flex;
+    height: 95%;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.tasks-heading {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+}
+
+.tasks-heading h1 {
+    font-size: 5.4rem;
+    font-weight: 700;
+}
+
+#introduction {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #A9A9A9;
+    margin: 10px 0px 10px;
+}
+
+.wrapper-tasks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 90%;
+}
+
+.tasks-inputs {
+    width: 90%;
+    height: 75%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+form input[type='text'] {
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    height: 100%;
+    padding: 0px 15px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: black;
+    border: none;
+}
+
+.starting, .ending {
+    width: 100%;
+    height: 100%;
+}
+
+.hour-to-do {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 45%;
+    color: rgb(168, 167, 167);
+    margin-left: 25px;
+    border-radius: 5px;
+}
+
+.hour-to-do p {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: rgb(34, 34, 34);
+}
+
+form input[type='time'] {
+    position: relative;
+    display: flex;
+    text-align: center;
+    color: black;
+    border: none;
+    width: 35%;
+    height: 100%;
+    font-size: 1.7rem;
+    font-weight: 600;
+    border: 2px solid #DDD7D7;
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.1));
+    border-radius: 5px;
+}
+
+form input[type='time']:hover {
+    background-color: #2D8E62;
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+form input[type='time']:focus {
+    background-color: #2D8E62;
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+input[type='time']::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:-10%;
+    cursor: pointer;
+}
+
+form input:focus {
+    outline: none;
+}
+
+form input::placeholder {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #A9A9A9;
+}
+
+form button {
+    background: linear-gradient(94.84deg, #2D8E62 1.42%, rgba(58, 185, 93, 0.692708) 100.3%);
+    box-shadow: 0px 4px 35px rgba(111, 201, 138, 0.5);
+    border-radius: 5px;
+    color: white;
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+    width: 15%;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 15px 0 15px;
+    height: 40px;
+}
+
+.full-width {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.checkbox-and-title {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-and-title p {
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 2rem;
+    color: black;
+}
+
+input[type='checkbox'] {
+    cursor: pointer;
+    padding: 10px;
+    width: 22px;
+    height: 22px;
+    accent-color: #2D8E62;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 150px;
+    background: linear-gradient(94.84deg, #2D8E62 1.42%, rgba(58, 185, 93, 0.692708) 100.3%);
+    color: white;
+    font-weight: 300;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    height: 100%;
+    padding: 6px;
+    margin-left: 5px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* notes content */
+
+.notes {
+    display: flex;
+    height: 95%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+.notes-header {
+    height: 15%;
+}
+
+.notes div h1 {
+    display: flex;
+    align-items: center;
+    font-size: 5.1rem;
+    font-weight: 700;
+}
+
+.notes div p {
+    font-weight: 400;
+    font-size: 2.1rem;
+    color: #A9A9A9;
+}
+
+.notes-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    width: 100%;
+    height: 85%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 25%;
+    align-items: flex-end;
+}
+
+.note-container {
+    background-color: transparent;
+    border: 3px dashed #D7D7D7;
+    overflow: hidden;
+    border-radius: 15px;
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear;
+}
+
+.note {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.create-or-delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+}
+
+.add-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    width: 100%;
+    height: 20%;
+    font-size: 3rem;
+    color: #d7d7d7;
+    cursor: pointer;
+    border-top: 3px dashed #D7D7D7;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+.note-content {
+    width: 100%;
+    height: 80%;
+}
+
+.try {
+    font-size: 50px;
+}
+
+.del-note {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ca5656;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.title-and-save {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+}
+
+.title {
+    font-size: 18px;
+    color: black;
+    letter-spacing: 1px;
+    padding-left: 5px;
+    border: none;
+    width: 90%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 15px 0px 0px 0px;
+}
+
+.title:focus {
+    outline: none;
+}
+
+.save-note {
+    background-color: green;
+    cursor: pointer;
+    border-radius: 0 13px 0 0;
+    color: white;
+    border: none;
+    width: 10%;
+    height: 90%;
+
+}
+
+.title::placeholder {
+    color: black;
+    padding-left: 5px;
+}
+
+textarea {
+    font-size: 14px;
+    padding: 0px 5px;
+    color: grey;
+    border: none;
+    outline: none;
+    height: 80%;
+    width: 100%;
+    resize: none;
+}
+
+@media (max-width: 1250px) {
+    body {
+        background-color: transparent;
+        height: 150vh;
+    }
+
+    main {
+        width: 80%;
+        height: 200vh;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .row {
+        height: 40%;
+        align-items: normal;
+    }
+
+    .tasks {
+        justify-content: space-around;
+    }
+
+    .tasks-heading {
+        width: 100%;
+    }
+
+    #introduction {
+        font-size: 2rem;
+    }
+
+    .tasks-inputs {
+        width: 100%;
+    }
+
+    .notes-header {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .notes-boxes {
+        width: 90%;
+        height: 100%;
+    }
+}
