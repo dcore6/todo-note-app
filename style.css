@@ -321,10 +321,6 @@ input[type='checkbox'] {
     border: 3px dashed #D7D7D7;
     overflow: hidden;
     border-radius: 15px;
-    -webkit-transition: all 1s linear;
-    -moz-transition: all 1s linear;
-    -o-transition: all 1s linear;
-    transition: all 1s linear;
 }
 
 .note {
@@ -405,12 +401,11 @@ input[type='checkbox'] {
 .save-note {
     background-color: green;
     cursor: pointer;
-    border-radius: 0 13px 0 0;
+    border-radius: 0 13px 0 5px;
     color: white;
     border: none;
     width: 10%;
     height: 90%;
-
 }
 
 .title::placeholder {

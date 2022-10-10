@@ -99,7 +99,7 @@ const getNotesFromLocalStorage = () => {
                 <div class="note" id=${i}>
                   <div class="title-and-save">
                     <input maxlength="25" class="title" type="text" placeholder="note title" value="${note.title}"<input>
-                    <button class="save-note">SV</button>
+                    <button class="save-note">S</button>
                   </div>
                   <textarea  placeholder="note content">${note.content}</textarea>;
                 </div>
@@ -269,7 +269,7 @@ const toggleNote = () => {
       if (!note.children.length) {
         note.innerHTML = `<div class="title-and-save">
                             <input maxlength="25" class="title" type="text" placeholder="note title"</input>
-                            <button class="save-note">SV</button>
+                            <button class="save-note">S</button>
                           </div>
                           <textarea placeholder="note content"></textarea>`;
         button.textContent = "X";
