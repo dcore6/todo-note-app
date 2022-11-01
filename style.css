@@ -80,7 +80,7 @@ main {
     flex-direction: column;
 }
 
-.tasks-heading h1 {
+.tasks-heading h2 {
     font-size: 5.4rem;
     font-weight: 700;
 }
@@ -285,7 +285,7 @@ input[type='checkbox'] {
     height: 15%;
 }
 
-.notes div h1 {
+.notes div h2 {
     display: flex;
     align-items: center;
     font-size: 5.1rem;
